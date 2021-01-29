@@ -1,0 +1,33 @@
+<p>personaje works!</p>
+
+<hr>
+
+
+
+<div class="container">
+    <h1 *ngFor="let pelicula of peliculas">
+      Episodio {{pelicula.episode_id}}: {{pelicula.title}}
+    </h1> 
+    <div class="row" >
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <h1>Nombre</h1> 
+      </div>
+      <div class="col-lg-4"  style="background-color:#ccc">
+        <h1>Statura</h1> 
+      </div>
+      <div class="col-lg-4"  style="background-color:#eee">
+        <h1>Genero</h1> 
+      </div>
+    </div>
+    <div class="row" *ngFor="let personaje of personajes">
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <p>{{ personaje.name}}</p>
+      </div>
+      <div class="col-lg-4"  style="background-color:#ccc">
+        <p>{{ personaje.height}}</p>
+      </div>
+      <div class="col-lg-4"  style="background-color:#eee">
+        <p>{{ personaje.gender}}</p>
+      </div>
+    </div>
+</div>
